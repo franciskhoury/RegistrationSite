@@ -1,0 +1,11 @@
+﻿body
+{
+}
+
+#bannerimage {
+    width: 100%;
+    background-image: url(/Resources/logo.png);
+    height: 100px;
+    background-color: white;
+    background-position: center;
+}
