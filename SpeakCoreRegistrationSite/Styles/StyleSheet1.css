@@ -1,3 +1,13 @@
-﻿body
-{
+﻿body {
+    background-color: white;
+    color: #555555;
+}
+
+.button {
+    background-color: #2988b5;
+    color: white;
+}
+
+.textBasic {
+
 }
