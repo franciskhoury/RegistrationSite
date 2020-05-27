@@ -37,14 +37,20 @@ input:invalid {
 }
 
 .tableclass {
-    border-collapse: collapse;
-    border: 20px solid white;
+    border-collapse: separate !important;
+    border: 1px solid #888888;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
     background-color: #ffffff;
+    min-width: 40%;
+    padding: 15px;
 }
 
 .labelClass {
     font-weight: bold;
+}
+
+.ddlClass {
+    border-radius: 3px;
 }
