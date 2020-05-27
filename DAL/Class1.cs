@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DataAccess
+namespace DAL
 {
     public class Class1
     {

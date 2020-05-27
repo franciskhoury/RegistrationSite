@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccess;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,7 +17,8 @@ namespace SpeakCoreRegistrationSite
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-
+            DataAccessor da = new DataAccessor();
+            txtPassword.Text = da.AuthenticateByPasswordOnly(txtPassword.Text)? "Welcome!" : "Go Home!";
         }
     }
 }
