@@ -15,6 +15,7 @@
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="~/Styles/StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <link href="~/Scripts/MySrcript.js"
 </head>
 <body>
 

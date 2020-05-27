@@ -14,7 +14,7 @@
             <td />
         </tr>
         <tr>
-            <td colspan="2"><asp:TextBox ID="txtPassword" runat="server" Width="100%"></asp:TextBox></td>
+            <td colspan="2"><input ID="txtPassword" runat="server" Width="100%" required="required"></input></td>
         </tr>
         <tr>
             <td />

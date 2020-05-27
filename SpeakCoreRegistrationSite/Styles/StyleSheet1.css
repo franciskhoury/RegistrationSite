@@ -3,6 +3,11 @@
     color: #555555;
 }
 
+input:invalid {
+    border: 2px solid #a93a44;
+    background-color: #ffe8ea;
+}
+
 .button {
     border-radius: 3px;
     border-style: none;
