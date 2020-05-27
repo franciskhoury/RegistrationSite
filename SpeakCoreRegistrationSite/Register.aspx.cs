@@ -19,5 +19,10 @@ namespace SpeakCoreRegistrationSite
             ddlState.DataValueField = "State";
             ddlState.DataBind();
         }
+
+        protected void btnRegContinue_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

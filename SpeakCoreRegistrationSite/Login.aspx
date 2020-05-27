@@ -19,7 +19,7 @@
             <td />
         </tr>
         <tr>
-            <td colspan="2"><input ID="txtPassword" runat="server" Width="100%" required="required"/></td>
+            <td colspan="2"><input ID="txtPassword" runat="server" Width="100%" required="required" type="password"/></td>
         </tr>
         <tr>
             <td />

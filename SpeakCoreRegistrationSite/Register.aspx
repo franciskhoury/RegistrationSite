@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <form id="frmRegister" runat="server" autocomplete="off">
+    <form id="frmRegister" runat="server" autocomplete="off" novalidate>
 
         <div class="banner">CONTACT INFORMATION</div>
         <table class="tableclass">
@@ -92,6 +92,16 @@
             <tr>
                 <td>&nbsp;</td>
                 <td />
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <asp:CheckBox ID="cbxSubscribe" runat="server" />&nbsp;&nbsp;<asp:Label ID="lblSubscribe" runat="server" Text="Label">Subscribe to Newsletter</asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td />
+                <td>
+                    <asp:Button CssClass="button" ID="btnRegContinue" runat="server" Text="Continue" OnClick="btnRegContinue_Click" /></td>
             </tr>
         </table>
     </form>
