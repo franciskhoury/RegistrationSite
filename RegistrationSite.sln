@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeakCoreRegistrationSite", "SpeakCoreRegistrationSite\SpeakCoreRegistrationSite.csproj", "{9F03FE20-B56F-456F-8A48-6EEE302522F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationSite", "SpeakCoreRegistrationSite\RegistrationSite.csproj", "{9F03FE20-B56F-456F-8A48-6EEE302522F0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{66B1E0E4-EF88-4B6A-A044-6F743F86FB1A}"
 EndProject
