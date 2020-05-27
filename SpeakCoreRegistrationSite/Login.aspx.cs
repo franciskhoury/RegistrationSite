@@ -18,7 +18,14 @@ namespace SpeakCoreRegistrationSite
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             DataAccessor da = new DataAccessor();
-            txtPassword.Value = da.AuthenticateByPasswordOnly(txtPassword.Value)? "Welcome!" : "";
+            if (da.AuthenticateByPasswordOnly(txtPassword.Value))
+            {
+                InvalidCredentialsMessage.Visible = false;
+            }
+            else
+            {
+                InvalidCredentialsMessage.Visible = true;
+            }
         }
     }
 }

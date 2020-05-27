@@ -21,6 +21,8 @@
             <td><asp:Button CssClass="button" ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" /></td>
         </tr>
     </table>
+    <asp:Label ID="InvalidCredentialsMessage" runat="server" ForeColor="Red" Text="Password is invalid. Please try again."
+            Visible="False"></asp:Label>
 </form>
 
 
