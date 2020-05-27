@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="SpeakCoreRegistrationSite.Login" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server" >
-
-    <form id="frmLogin" runat="server" autocomplete="off" >
+        
+    <form id="frmLogin" runat="server" autocomplete="off" novalidate>
     <div class="banner">LOGIN</div>
     <table class="tableclass">
         <tr>
@@ -10,11 +10,16 @@
             <td />
         </tr>
         <tr>
-            <td><b>Password:</b></td> 
+            <td>&nbsp;</td> 
             <td />
         </tr>
         <tr>
-            <td colspan="2"><input ID="txtPassword" runat="server" Width="100%" required="required"></input></td>
+            <td>
+                <asp:Label ID="lblPassword" class="labelClass" runat="server" Text="Password:"></asp:Label></td> 
+            <td />
+        </tr>
+        <tr>
+            <td colspan="2"><input ID="txtPassword" runat="server" Width="100%" required="required"/></td>
         </tr>
         <tr>
             <td />

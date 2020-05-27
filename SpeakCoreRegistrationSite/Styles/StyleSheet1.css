@@ -3,6 +3,7 @@
     color: #555555;
 }
 
+
 input:invalid {
     border: 2px solid #a93a44;
     background-color: #ffe8ea;
@@ -42,4 +43,8 @@ input:invalid {
     margin-left: auto;
     margin-right: auto;
     background-color: #ffffff;
+}
+
+.labelClass {
+    font-weight: bold;
 }
