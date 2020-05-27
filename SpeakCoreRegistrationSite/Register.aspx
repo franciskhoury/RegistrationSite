@@ -1,16 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="SpeakCoreRegistrationSite.RegistrationForm" %>
+﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="SpeakCoreRegistrationSite.RegistrationForm" %>
 
-<!DOCTYPE html>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server" >
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            Register now!
-        </div>
-    </form>
-</body>
-</html>
+    <form id="frmRegister" runat="server" autocomplete="off" >
+    <div class="banner">CONTACT INFORMATION</div>
+ 
+</form>
+
+
+</asp:Content>
