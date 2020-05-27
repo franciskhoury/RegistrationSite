@@ -48,7 +48,9 @@
             <tr>
 
                 <td>
-                    <asp:DropDownList ID="ddlState" class="ddlClass" runat="server"></asp:DropDownList>
+                    <asp:DropDownList ID="ddlStates" class="ddlClass" runat="server">
+                        <asp:listitem selected="True" text="Select State" value=""></asp:listitem>
+                    </asp:DropDownList>
                 </td>
             </tr>
             <tr>

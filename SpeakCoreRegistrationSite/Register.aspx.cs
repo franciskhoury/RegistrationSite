@@ -13,11 +13,13 @@ namespace SpeakCoreRegistrationSite
         DataAccessor da = new DataAccessor();
         protected void Page_Load(object sender, EventArgs e)
         {
-            ddlState.DataSource = da.GetStates();
-            ddlState.DataBind();
-            ddlState.DataTextField = "State";
-            ddlState.DataValueField = "State";
-            ddlState.DataBind();
+            ddlStates.DataSource = da.GetStates();
+            //ddlStates.DataBind();
+            ddlStates.DataTextField = "State";
+            ddlStates.DataValueField = "State";
+            ddlStates.DataBind();
+
+            ddlStates.Items.Insert(0, new ListItem("Select State", ""));
         }
 
         protected void btnRegContinue_Click(object sender, EventArgs e)
