@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 using System.Runtime.CompilerServices;
 
@@ -29,6 +30,34 @@ namespace DataAccess
 
             }
             return pass;
+        }
+
+        public DataTable GetStates()
+        {
+            DataTable dt = new DataTable();
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                SqlCommand cmd = new SqlCommand
+                {
+                    Connection = conn,
+                    CommandType = System.Data.CommandType.Text,
+                    CommandText = "select * from dbo.States"
+                };
+                try
+                {
+                    SqlDataAdapter adpt = new SqlDataAdapter(cmd.CommandText, conn);
+                    
+                    adpt.Fill(dt);
+                }
+                catch (Exception ex)
+                {
+                    //Do logging
+                    Console.WriteLine(ex.Message);
+                }
+
+
+            }
+            return dt;
         }
     }
 }
