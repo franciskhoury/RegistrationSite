@@ -18,7 +18,7 @@ namespace BusinessLayer
 
         public bool AuthenticateByPasswordOnly(string pw)
         {
-            
+
             return da.AuthenticateByPasswordOnly(pw);
         }
 

@@ -35,8 +35,35 @@ namespace DataAccess
 
         public bool AddPerson(Person p)
         {
-            return p.IsSubscribed;
+            bool pass = false;
+            
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                int subscriber = p.IsSubscribed ? 1 : 0;
+                SqlCommand cmd = new SqlCommand
+                {
+                    
+                    Connection = conn,
+                    CommandType = System.Data.CommandType.Text,
+                    CommandText = $"insert into dbo.Registrants (EmailAddress,FirstName,LastName,State,IsSubscriber)" +
+                    $" values ('{p.Email}','{p.FirstName}','{p.LastName}','{p.State}',{subscriber})"
+                };
+                try
+                {
+                    conn.Open();
+                    pass = cmd.ExecuteNonQuery() == 1 ? true : false;
+                }
+                catch (Exception ex)
+                {
+                    //Do logging
+                    Console.WriteLine(ex.Message);
+                }
+
+
+            }
+            return pass;
         }
+
 
         public DataTable GetStates()
         {
