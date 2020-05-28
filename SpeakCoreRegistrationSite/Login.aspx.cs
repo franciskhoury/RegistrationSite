@@ -21,6 +21,7 @@ namespace SpeakCoreRegistrationSite
             BusinessClass business = new BusinessClass();
             if (business.AuthenticateByPasswordOnly(txtPassword.Value))
             {
+                Session["InternalRedirect"] = true;
                 FormsAuthentication.RedirectFromLoginPage("", true);
             }
             else

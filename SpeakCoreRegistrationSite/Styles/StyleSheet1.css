@@ -38,6 +38,11 @@
     font-size:20px;
 }
 
+.emphaticText {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .formclass {
     background-color: #dedede;
     height:50%;

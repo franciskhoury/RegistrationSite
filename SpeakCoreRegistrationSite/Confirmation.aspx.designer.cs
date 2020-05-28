@@ -11,7 +11,7 @@ namespace SpeakCoreRegistrationSite
 {
 
 
-    public partial class COnfirmation
+    public partial class Confirmation
     {
 
         /// <summary>

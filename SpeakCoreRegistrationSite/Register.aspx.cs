@@ -15,6 +15,11 @@ namespace SpeakCoreRegistrationSite
         BusinessClass business = new BusinessClass();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["InternalRedirect"] == null || (bool)Session["InternalRedirect"] == false)
+            {
+                Response.Redirect("~/Login.aspx");
+            }
+
             ddlStates.DataSource = business.GetStates();
             ddlStates.DataTextField = "State";
             ddlStates.DataValueField = "State";
@@ -33,6 +38,10 @@ namespace SpeakCoreRegistrationSite
             p.Email = Request.Form["ctl00$MainContent$txtEmail"];
             p.IsSubscribed = Request.Form["ctl00$MainContent$cbxSubscribe"] == "on" ? true : false;
 
+
+            //On SUCCESS, redirect the user to the Confirmation Page
+            Session["InternalRedirect"] = true;
+            Response.Redirect("~/Confirmation.aspx");
         }
     }
 }

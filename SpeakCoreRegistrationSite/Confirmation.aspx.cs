@@ -11,7 +11,11 @@ namespace SpeakCoreRegistrationSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["InternalRedirect"] == null || (bool)Session["InternalRedirect"] == false)
+            {
+                Response.Redirect("~/Login.aspx");
+            }
+            Session["InternalRedirect"] = false;
         }
     }
 }
