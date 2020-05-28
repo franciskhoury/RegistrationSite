@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="SpeakCoreRegistrationSite.RegistrationForm" %>
+﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" ClientIDMode="Static" CodeBehind="Register.aspx.cs" Inherits="SpeakCoreRegistrationSite.RegistrationForm" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -21,7 +21,10 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input id="txtFirstName" runat="server" width="100%" required="required" /></td>
+                    <asp:TextBox ID="txtFirstName" runat="server" width="100%" required="required"></asp:TextBox>
+                    <%--<input id="txtFirstName" runat="server" width="100%" required="required" />--%>
+
+                </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
@@ -97,13 +100,15 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <asp:CheckBox ID="cbxSubscribe" runat="server" />&nbsp;&nbsp;<asp:Label ID="lblSubscribe" runat="server" Text="Label">Subscribe to Newsletter</asp:Label>
+                    <input type="checkbox" id="cbxSubscribe" runat="server" />&nbsp;&nbsp;<asp:Label ID="lblSubscribe" runat="server" Text="Label">Subscribe to Newsletter</asp:Label>
                 </td>
             </tr>
             <tr>
                 <td />
                 <td>
-                    <asp:Button CssClass="button" ID="btnRegContinue" runat="server" Text="Continue" OnClick="btnRegContinue_Click" /></td>
+                    <asp:Button CssClass="button" ID="btnRegContinue" runat="server" Text="Continue" OnClick="btnRegContinue_Click" />
+                    <%--<input type="submit" value="Continue" class="button" name="btnRegContinue" runat="server" onclick="btnRegContinue_Click" />--%>
+                </td>
             </tr>
         </table>
     </form>

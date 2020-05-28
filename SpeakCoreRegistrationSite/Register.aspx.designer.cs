@@ -39,7 +39,7 @@ namespace SpeakCoreRegistrationSite
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtFirstName;
+        protected global::System.Web.UI.WebControls.TextBox txtFirstName;
 
         /// <summary>
         /// lblLastName control.
@@ -120,7 +120,7 @@ namespace SpeakCoreRegistrationSite
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox cbxSubscribe;
+        protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox cbxSubscribe;
 
         /// <summary>
         /// lblSubscribe control.

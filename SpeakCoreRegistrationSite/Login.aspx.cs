@@ -1,4 +1,4 @@
-﻿using DataAccess;
+﻿using BusinessLayer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,8 +18,8 @@ namespace SpeakCoreRegistrationSite
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            DataAccessor da = new DataAccessor();
-            if (da.AuthenticateByPasswordOnly(txtPassword.Value))
+            BusinessClass business = new BusinessClass();
+            if (business.AuthenticateByPasswordOnly(txtPassword.Value))
             {
                 FormsAuthentication.RedirectFromLoginPage("", true);
             }

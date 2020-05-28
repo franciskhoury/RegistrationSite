@@ -249,9 +249,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
-      <Project>{66b1e0e4-ef88-4b6a-a044-6f743f86fb1a}</Project>
-      <Name>DataAccess</Name>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{87c10e1e-1b41-48f4-81e7-1f27e61517f6}</Project>
+      <Name>BusinessLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
