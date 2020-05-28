@@ -4,10 +4,16 @@
 }
 
 
-input:invalid {
+/*form.submitted input:invalid {
     border: 2px solid #a93a44;
     background-color: #ffe8ea;
 }
+*/
+
+/*input:invalid {
+    border: 2px solid green;
+    background-color: #000000;
+}*/
 
 .button {
     border-radius: 3px;

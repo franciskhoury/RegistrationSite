@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <form id="frmRegister" runat="server" autocomplete="off" novalidate>
+    <form id="frmRegister" runat="server" autocomplete="off" method="post">
 
         <div class="banner">CONTACT INFORMATION</div>
         <table class="tableclass">
@@ -48,7 +48,7 @@
             <tr>
 
                 <td>
-                    <asp:DropDownList ID="ddlStates" class="ddlClass" runat="server">
+                    <asp:DropDownList ID="ddlStates" class="ddlClass" runat="server" required="required">
                         <asp:listitem selected="True" text="Select State" value=""></asp:listitem>
                     </asp:DropDownList>
                 </td>

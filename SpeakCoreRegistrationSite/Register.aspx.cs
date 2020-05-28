@@ -14,7 +14,6 @@ namespace SpeakCoreRegistrationSite
         protected void Page_Load(object sender, EventArgs e)
         {
             ddlStates.DataSource = da.GetStates();
-            //ddlStates.DataBind();
             ddlStates.DataTextField = "State";
             ddlStates.DataValueField = "State";
             ddlStates.DataBind();
@@ -24,6 +23,7 @@ namespace SpeakCoreRegistrationSite
 
         protected void btnRegContinue_Click(object sender, EventArgs e)
         {
+            //TODO: sumbit form data to Data Access Layer
 
         }
     }
