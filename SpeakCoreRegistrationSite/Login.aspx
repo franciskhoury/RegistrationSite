@@ -23,12 +23,12 @@
             <td colspan="2"><input ID="txtPassword" runat="server" Width="100%" type="password" required="required"/></td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
+            <td><asp:Label ID="InvalidCredentialsMessage" runat="server" ForeColor="Red" Text="Password is invalid. Please try again."
+            Visible="False"></asp:Label></td>
             <td><asp:Button CssClass="button" name="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" /></td>
         </tr>
     </table>
-    <asp:Label ID="InvalidCredentialsMessage" runat="server" ForeColor="Red" Text="Password is invalid. Please try again."
-            Visible="False"></asp:Label>
+    
 </form>
 
 
