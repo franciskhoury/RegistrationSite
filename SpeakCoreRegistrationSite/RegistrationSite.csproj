@@ -261,6 +261,10 @@
       <Project>{87c10e1e-1b41-48f4-81e7-1f27e61517f6}</Project>
       <Name>BusinessLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Modela\Models.csproj">
+      <Project>{5dcaaf68-67a2-4397-afcc-161638e923b9}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

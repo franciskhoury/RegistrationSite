@@ -1,4 +1,5 @@
-﻿using DataAccess;
+﻿using Models;
+using DataAccess;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -24,6 +25,11 @@ namespace BusinessLayer
         public DataTable GetStates()
         {
             return da.GetStates();
+        }
+
+        public bool RegisterPerson(Person p)
+        {
+            return da.AddPerson(p);
         }
 
     }

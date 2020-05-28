@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Models;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Runtime.CompilerServices;
@@ -30,6 +31,11 @@ namespace DataAccess
 
             }
             return pass;
+        }
+
+        public bool AddPerson(Person p)
+        {
+            return p.IsSubscribed;
         }
 
         public DataTable GetStates()

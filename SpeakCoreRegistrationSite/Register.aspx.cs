@@ -1,11 +1,7 @@
 ﻿
 using BusinessLayer;
-using BusinessLayer.Models;
+using Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace SpeakCoreRegistrationSite
@@ -38,10 +34,17 @@ namespace SpeakCoreRegistrationSite
             p.Email = Request.Form["ctl00$MainContent$txtEmail"];
             p.IsSubscribed = Request.Form["ctl00$MainContent$cbxSubscribe"] == "on" ? true : false;
 
+            if (business.RegisterPerson(p))
+            {
+                //On SUCCESS, redirect the user to the Confirmation Page
+                Session["InternalRedirect"] = true;
+                Response.Redirect("~/Confirmation.aspx");
+            }
+            else
+            {
+                RegistrationErrorMessage.Visible = true;
+            }
 
-            //On SUCCESS, redirect the user to the Confirmation Page
-            Session["InternalRedirect"] = true;
-            Response.Redirect("~/Confirmation.aspx");
         }
     }
 }

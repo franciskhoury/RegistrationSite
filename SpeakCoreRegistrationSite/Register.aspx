@@ -111,6 +111,8 @@
                 </td>
             </tr>
         </table>
+            <asp:Label ID="RegistrationErrorMessage" runat="server" ForeColor="Red" Text="Registration failed. Please try again or contact an administrator."
+            Visible="False"></asp:Label>
     </form>
 
     <%--<script src="~/Scripts/MySrcript.js" type="text/javascript"></script>--%>
