@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server" >
      
-    <form id="frmLogin" runat="server" autocomplete="off">
+    <form id="frmConfirmation" runat="server" autocomplete="off">
     <div class="banner">COMPLETE</div>
     <table class="tableclass">
         <tr>
