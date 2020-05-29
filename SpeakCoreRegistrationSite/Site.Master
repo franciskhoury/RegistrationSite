@@ -25,12 +25,9 @@
             </div>
 
         <div style ="background-color: #dedede;">
+            <div style="height: 20px;"></div>
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <p>&nbsp;</p>
-            <footer>
-                <p>&nbsp;</p>
-            </footer>
         </div>
 
 </body>

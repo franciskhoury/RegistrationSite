@@ -4,8 +4,8 @@
 
     <form id="frmRegister" runat="server" autocomplete="off" method="post" novalidate>
 
-        <div class="banner">CONTACT INFORMATION</div>
-        <table class="tableclass">
+        <div class="bannerTop">CONTACT INFORMATION</div>
+        <table>
             <tr>
                 <td>Please fill in the following required information.</td>
                 <td />
@@ -92,7 +92,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input id="txtConfEmail" runat="server" width="100%" required="required" type="email"/></td>
+                    <input id="txtConfEmail" runat="server" width="100%" required="required" type="email" /></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
@@ -113,6 +113,8 @@
         </table>
         <asp:Label ID="RegistrationErrorMessage" runat="server" ForeColor="Red" Text="Registration failed. Please try again or contact an administrator."
             Visible="False"></asp:Label>
+        <p>&nbsp;</p>
+        <div class="bannerBottom"></div>
     </form>
 
     <script type="text/javascript">

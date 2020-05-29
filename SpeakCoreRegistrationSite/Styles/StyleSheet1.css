@@ -38,10 +38,10 @@ label.error {
     color: white;
 }
 
-.banner {
+.bannerTop {
     background-color: #2988b5;
     color: white;
-    height: 50px;
+    height: 45px;
     line-height: 50px;
     text-align: center;
     margin-top: 1%;
@@ -57,16 +57,16 @@ label.error {
 
 form {
     background-color: #dedede;
-    height:50%;
+/*    height:50%;*/
     padding-bottom: 50px%;
 }
 
-footer {
+.bannerBottom {
     background-color: #aaaaaa;
-    height: 50px;
+    height: 45px;
 }
 
-.tableclass {
+table {
     border-collapse: separate !important;
     border: 1px solid #888888;
     border-radius: 10px;
