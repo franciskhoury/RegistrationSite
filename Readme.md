@@ -9,3 +9,9 @@
  Styling (red) for invalid input controls not working
  text box layout within table - strecth to fit full width
 
+ # For consideration
+
+ To call email validation via JS (or AJAX?):
+ https://stackoverflow.com/questions/7089760/how-to-call-an-asp-net-c-sharp-method-using-javascript
+
+
