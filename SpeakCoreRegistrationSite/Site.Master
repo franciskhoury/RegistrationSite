@@ -21,14 +21,14 @@
 <body>
 
             <div >
-                <img src="Resources/logo.png" style='margin-left: 25%; margin-right: 25%; margin-top: 2px; margin-bottom: 2px; height: 40%; width: 40%; object-fit: contain'; />
+                <img src="Resources/logo.png" style='margin-left: 35%; margin-right: 35%; margin-top: 2px; margin-bottom: 2px; height: 40%; width: 30%; object-fit: contain'; />
             </div>
 
-        <div class="formclass">
+        <div style ="background-color: #dedede;">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer class="footerclass">
+            <p>&nbsp;</p>
+            <footer>
                 <p>&nbsp;</p>
             </footer>
         </div>
