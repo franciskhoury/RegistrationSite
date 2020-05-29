@@ -11,11 +11,11 @@
     background-position: center;
 }
 
-/*form.submitted input:invalid {
-    border: 2px solid #a93a44;
+.error {
+    color: #a93a44;
     background-color: #ffe8ea;
 }
-*/
+
 
 /*input:invalid {
     border: 2px solid green;
