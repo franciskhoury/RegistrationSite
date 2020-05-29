@@ -79,7 +79,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input id="txtEmail" runat="server" width="100%" required="required" /></td>
+                    <input id="txtEmail" runat="server" width="100%" required="required" onchange="ValidateEmail(this)" /></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
@@ -114,6 +114,5 @@
             <asp:Label ID="RegistrationErrorMessage" runat="server" ForeColor="Red" Text="Registration failed. Please try again or contact an administrator."
             Visible="False"></asp:Label>
     </form>
-
-    <%--<script src="~/Scripts/MySrcript.js" type="text/javascript"></script>--%>
+    
 </asp:Content>
