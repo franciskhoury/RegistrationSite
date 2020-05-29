@@ -21,7 +21,7 @@
             <td />
             </tr>
         </table>
-        <p>&nbsp;</p>
+        <div>&nbsp;</div>
         <div class="bannerBottom"></div>
     </form>
 

@@ -31,7 +31,7 @@
                     <asp:Button CssClass="button" name="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" /></td>
             </tr>
         </table>
-            <p>&nbsp;</p>
+            <div>&nbsp;</div>
     <div class="bannerBottom"></div>
     </form>
 

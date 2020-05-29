@@ -113,7 +113,7 @@
         </table>
         <asp:Label ID="RegistrationErrorMessage" runat="server" ForeColor="Red" Text="Registration failed. Please try again or contact an administrator."
             Visible="False"></asp:Label>
-        <p>&nbsp;</p>
+        <div>&nbsp;</div>
         <div class="bannerBottom"></div>
     </form>
 
