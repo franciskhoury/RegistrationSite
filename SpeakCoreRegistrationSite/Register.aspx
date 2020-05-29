@@ -21,7 +21,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <asp:TextBox ID="txtFirstName" runat="server" width="100%" required="required"></asp:TextBox>
+                    <asp:TextBox ID="txtFirstName" runat="server" Width="100%" required="required"></asp:TextBox>
                     <%--<input id="txtFirstName" runat="server" width="100%" required="required" />--%>
 
                 </td>
@@ -52,7 +52,7 @@
 
                 <td>
                     <asp:DropDownList ID="ddlStates" class="ddlClass" runat="server" required="required">
-                        <asp:listitem selected="True" text="Select State" value=""></asp:listitem>
+                        <asp:ListItem Selected="True" Text="Select State" Value=""></asp:ListItem>
                     </asp:DropDownList>
                 </td>
             </tr>
@@ -92,7 +92,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input id="txtConfEmail" runat="server" width="100%" required="required" /></td>
+                    <input id="txtConfEmail" runat="server" width="100%" required="required" onchange="confirmEmail()"/></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
@@ -111,8 +111,18 @@
                 </td>
             </tr>
         </table>
-            <asp:Label ID="RegistrationErrorMessage" runat="server" ForeColor="Red" Text="Registration failed. Please try again or contact an administrator."
+        <asp:Label ID="RegistrationErrorMessage" runat="server" ForeColor="Red" Text="Registration failed. Please try again or contact an administrator."
             Visible="False"></asp:Label>
     </form>
-    
+
+    <script type="text/javascript">
+        function confirmEmail() {
+            var email = document.getElementById("txtEmail").value
+            var confemail = document.getElementById("txtConfEmail").value
+            if (email != confemail) {
+                alert('Email Not Matching!');
+            }
+        }
+    </script>
+
 </asp:Content>

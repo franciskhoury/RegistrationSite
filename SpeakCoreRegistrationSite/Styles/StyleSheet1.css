@@ -3,6 +3,13 @@
     color: #555555;
 }
 
+#bannerimage {
+    width: 100%;
+    background-image: url(/Resources/logo.png);
+    height: 100px;
+    background-color: white;
+    background-position: center;
+}
 
 /*form.submitted input:invalid {
     border: 2px solid #a93a44;
