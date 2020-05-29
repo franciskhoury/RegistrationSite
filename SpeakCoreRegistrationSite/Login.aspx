@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="SpeakCoreRegistrationSite.Login" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server" >
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server" novalidate>
      
     <form id="frmLogin" runat="server" autocomplete="off">
     <div class="banner">LOGIN</div>
@@ -20,7 +20,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td colspan="2"><input ID="txtPassword" runat="server" Width="100%" type="password" required="required"/></td>
+            <td colspan="2"><input ID="txtPassword" runat="server" Width="100%" type="password" required/></td>
         </tr>
         <tr>
             <td><asp:Label ID="InvalidCredentialsMessage" runat="server" ForeColor="Red" Text="Password is invalid. Please try again."
@@ -30,7 +30,7 @@
     </table>
     
 </form>
-
+<script>$("#frmLogin").validate();</script>
 
 </asp:Content>
 

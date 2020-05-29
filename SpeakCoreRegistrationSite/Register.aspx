@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <form id="frmRegister" runat="server" autocomplete="off" method="post">
+    <form id="frmRegister" runat="server" autocomplete="off" method="post" novalidate>
 
         <div class="banner">CONTACT INFORMATION</div>
         <table class="tableclass">
@@ -79,7 +79,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input id="txtEmail" runat="server" width="100%" required="required" onchange="ValidateEmail(this)" /></td>
+                    <input id="txtEmail" runat="server" width="100%" required type="email" /></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
@@ -92,7 +92,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input id="txtConfEmail" runat="server" width="100%" required="required" onchange="confirmEmail()"/></td>
+                    <input id="txtConfEmail" runat="server" width="100%" required="required" type="email"/></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
@@ -120,9 +120,10 @@
             var email = document.getElementById("txtEmail").value
             var confemail = document.getElementById("txtConfEmail").value
             if (email != confemail) {
-                alert('Email Not Matching!');
+                alert('Email does not match!');
             }
         }
     </script>
+    <script>$("#frmRegister").validate();</script>
 
 </asp:Content>
