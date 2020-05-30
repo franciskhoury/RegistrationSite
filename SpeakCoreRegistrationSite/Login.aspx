@@ -21,7 +21,11 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input id="txtPassword" runat="server" width="100%" type="password" required /></td>
+                    <input id="txtPassword" runat="server"  type="password" required /></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
@@ -32,7 +36,7 @@
             </tr>
         </table>
             <div>&nbsp;</div>
-    <div class="bannerBottom"></div>
+
     </form>
 
     <script>$("#frmLogin").validate();</script>

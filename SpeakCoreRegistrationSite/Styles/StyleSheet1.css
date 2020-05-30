@@ -1,17 +1,35 @@
-﻿body {
+﻿html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
     background-color: white;
     color: #555555;
     padding-top: 0px;
-    min-height: 500px;
 }
 
-/*#bannerimage {
-    width: 100%;
-    background-image: url(/Resources/logo.png);
-    height: 100px;
-    background-color: white;
-    background-position: center;
-}*/
+form {
+    background-color: #dedede;
+    min-height:100%;
+    padding-bottom:100%;
+}
+
+table {
+    border-collapse: separate !important;
+    border: 1px solid #888888;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    min-width: 40%;
+    padding: 15px;
+}
+
+
+input {
+    width:100%;
+}
 
 input.error {
     color: #a93a44;
@@ -46,31 +64,19 @@ label.error {
     font-size:20px;
 }
 
+.bannerBottom {
+    background-color: #aaaaaa;
+    height: 45px;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+}
+
 .emphaticText {
     font-weight: bold;
     font-size: 20px;
 }
 
-form {
-    background-color: #dedede;
-    padding-bottom: 50px%;
-}
-
-.bannerBottom {
-    background-color: #aaaaaa;
-    height: 45px;
-}
-
-table {
-    border-collapse: separate !important;
-    border: 1px solid #888888;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #ffffff;
-    min-width: 40%;
-    padding: 15px;
-}
 
 .labelClass {
     font-weight: bold;

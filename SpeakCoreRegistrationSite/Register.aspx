@@ -100,7 +100,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input type="checkbox" id="cbxSubscribe" runat="server" />&nbsp;&nbsp;<asp:Label ID="lblSubscribe" runat="server" Text="Label">Subscribe to Newsletter</asp:Label>
+                    <input type="checkbox" id="cbxSubscribe" runat="server" style="width:20px" />&nbsp;&nbsp;<asp:Label ID="lblSubscribe" runat="server" Text="Label">Subscribe to Newsletter</asp:Label>
                 </td>
             </tr>
             <tr>
