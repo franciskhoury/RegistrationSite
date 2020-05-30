@@ -21,7 +21,7 @@
 <body>
 
             <div >
-                <img src="Resources/logo.png" style='margin-left: 40%; margin-right: 40%; margin-top: 2px; margin-bottom: 2px; height: 40%; width: 20%; object-fit: contain'; />
+                <img src="Resources/logo.png" style='margin-left: 40%; margin-right: 40%; margin-top: 5px; margin-bottom: 5px; height: 40%; width: 20%; object-fit: contain'; />
             </div>
 
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
