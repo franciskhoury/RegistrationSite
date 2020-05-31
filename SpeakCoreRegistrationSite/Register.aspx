@@ -92,7 +92,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input id="txtConfEmail" runat="server" width="100%" required="required" type="email" /></td>
+                    <input id="txtConfEmail" equalTo="#txtEmail" runat="server" width="100%" required="required" type="email" /></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
@@ -114,7 +114,6 @@
         <asp:Label ID="RegistrationErrorMessage" runat="server" ForeColor="Red" Text="Registration failed. Please try again or contact an administrator."
             Visible="False"></asp:Label>
         <div>&nbsp;</div>
-        <div class="bannerBottom"></div>
     </form>
 
     <script type="text/javascript">

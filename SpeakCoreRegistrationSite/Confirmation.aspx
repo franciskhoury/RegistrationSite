@@ -22,7 +22,6 @@
             </tr>
         </table>
         <div>&nbsp;</div>
-        <div class="bannerBottom"></div>
     </form>
 
 
