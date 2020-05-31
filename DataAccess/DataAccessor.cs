@@ -15,12 +15,16 @@ namespace DataAccess
             bool pass = false;
             using (SqlConnection conn = new SqlConnection(connString))
             {
-                SqlCommand cmd = new SqlCommand{Connection = conn, CommandType = System.Data.CommandType.Text, 
-                    CommandText = $"select 1 from dbo.Credentials where Password = '{pw}'" };
+                SqlCommand cmd = new SqlCommand
+                {
+                    Connection = conn,
+                    CommandType = System.Data.CommandType.Text,
+                    CommandText = $"select 1 from dbo.Credentials where Password = '{pw}'"
+                };
                 try
                 {
                     conn.Open();
-                    pass = cmd.ExecuteScalar() == null? false : true;
+                    pass = cmd.ExecuteScalar() == null ? false : true;
                 }
                 catch (Exception ex)
                 {
@@ -33,16 +37,16 @@ namespace DataAccess
             return pass;
         }
 
-        public bool AddPerson(Person p)
+        public int AddPerson(Person p)
         {
-            bool pass = false;
-            
+            int pass = -1;
+
             using (SqlConnection conn = new SqlConnection(connString))
             {
                 int subscriber = p.IsSubscribed ? 1 : 0;
                 SqlCommand cmd = new SqlCommand
                 {
-                    
+
                     Connection = conn,
                     CommandType = System.Data.CommandType.Text,
                     CommandText = $"insert into dbo.Registrants (EmailAddress,FirstName,LastName,State,IsSubscriber)" +
@@ -51,15 +55,27 @@ namespace DataAccess
                 try
                 {
                     conn.Open();
-                    pass = cmd.ExecuteNonQuery() == 1 ? true : false;
+                    pass = cmd.ExecuteNonQuery();
+                }
+                catch (SqlException ex)
+                {
+                    //Do logging
+
+                    if (ex.Number == 2627) // Duplicate Key
+                    {
+                        pass = 0;
+                    }
+                    else
+                    {
+                        pass = -1;
+                    }
                 }
                 catch (Exception ex)
                 {
                     //Do logging
-                    Console.WriteLine(ex.Message);
+
+                    pass = -1;
                 }
-
-
             }
             return pass;
         }
@@ -79,7 +95,7 @@ namespace DataAccess
                 try
                 {
                     SqlDataAdapter adpt = new SqlDataAdapter(cmd.CommandText, conn);
-                    
+
                     adpt.Fill(dt);
                 }
                 catch (Exception ex)

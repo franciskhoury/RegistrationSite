@@ -34,15 +34,22 @@ namespace SpeakCoreRegistrationSite
             p.Email = Request.Form["ctl00$MainContent$txtEmail"];
             p.IsSubscribed = Request.Form["ctl00$MainContent$cbxSubscribe"] == "on" ? true : false;
 
-            if (business.RegisterPerson(p))
+            if (business.RegisterPerson(p) == 1)
             {
                 //On SUCCESS, redirect the user to the Confirmation Page
                 Session["InternalRedirect"] = true;
                 Response.Redirect("~/Confirmation.aspx");
+
+            }
+            else if (business.RegisterPerson(p) == 0)
+            {
+                RegistrationErrorMessage.Visible = false;
+                DuplicateRegistrationErrorMessage.Visible = true;
             }
             else
             {
                 RegistrationErrorMessage.Visible = true;
+                DuplicateRegistrationErrorMessage.Visible = false;
             }
 
         }

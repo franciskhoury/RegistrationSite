@@ -113,6 +113,8 @@
         </table>
         <asp:Label ID="RegistrationErrorMessage" runat="server" ForeColor="Red" Text="Registration failed. Please try again or contact an administrator."
             Visible="False"></asp:Label>
+        <asp:Label ID="DuplicateRegistrationErrorMessage" runat="server" ForeColor="Red" Text="The user with this email address has already been registered."
+            Visible="False"></asp:Label>
         <div>&nbsp;</div>
     </form>
 

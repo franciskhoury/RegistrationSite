@@ -24,7 +24,7 @@ namespace BusinessLayer
             return da.GetStates();
         }
 
-        public bool RegisterPerson(Person p)
+        public int RegisterPerson(Person p)
         {
             return da.AddPerson(p);
         }
