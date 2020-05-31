@@ -2,6 +2,8 @@
 using DataAccess;
 
 using System.Data;
+using Utilities;
+using System.Configuration;
 
 namespace BusinessLayer
 {
@@ -26,7 +28,16 @@ namespace BusinessLayer
 
         public int RegisterPerson(Person p)
         {
-            return da.AddPerson(p);
+            int result = da.AddPerson(p);
+            if (result == 1)
+            {
+                EmailUtilities.SendEmail(ConfigurationManager.AppSettings["EmailUsername"], 
+                    p.Email, 
+                    "Registration to Speakcore Conference", 
+                    $"<div>Hi {p.FirstName},</div><div>See you at the conference!</div>");
+            }
+
+            return result; // What if registration succeeded and email send failed?
         }
 
     }
