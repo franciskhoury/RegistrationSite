@@ -36,7 +36,7 @@ namespace BusinessLayer
                     "Registration to Speakcore Conference", 
                     $"<p>Dear {p.FirstName},</p><p></p>" +
                     "<p>On behalf of Pharma Company, Inc., thank you for registering for the Speaker Training Meeting.</p><p></p>" +
-                    "<p>You will receive a formal confirmatiomn email within the next 3 to 5 business days, including" +
+                    "<p>You will receive a formal confirmatiomn email within the next 3 to 5 business days, including " +
                     "information for booking your travel.</p><p></p>" +
                     "<p>Regards,</p><p>The SpeakCore Team</p>");
             }
