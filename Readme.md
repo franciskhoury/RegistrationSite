@@ -3,7 +3,7 @@
  Notes:
  ======
  1. Database script for SQL Server is in Database folder.
- 2. Email uses the Gmail smtp server.  Credentials can be passed in from appsettings.
+ 2. Email uses the Gmail smtp server.  Credentials are passed in from appsettings. Placeholders are provided.
  
  To-Do List:
  ============
