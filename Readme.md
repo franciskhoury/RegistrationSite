@@ -1,17 +1,14 @@
 # Registration Site
 
- To Do:
- Email validation - don't use popups
- breadcrumb images
- generate / send email
- give feedback on duplicate registration
- fix UI issues - image too large, "footer" area too small, not docked bottom
- Styling (red) for invalid input controls not working
- text box layout within table - strecth to fit full width
-
- # For consideration
-
- To call email validation via JS (or AJAX?):
- https://stackoverflow.com/questions/7089760/how-to-call-an-asp-net-c-sharp-method-using-javascript
-
-
+ Notes:
+ ======
+ 1. Database script for SQL Server is in Database folder.
+ 2. Email uses the Gmail smtp server.  Credentials can be passed in from appsettings.
+ 
+ To-Do List:
+ ============
+ 1. breadcrumb images
+ 2. refine email layout
+ 3. match validation styling to requirements (no messages)
+ 4. Notify user of registration succeeded but email send failed.
+ 5. Exception logging on server
