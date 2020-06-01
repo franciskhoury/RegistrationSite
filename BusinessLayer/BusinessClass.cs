@@ -34,7 +34,11 @@ namespace BusinessLayer
                 EmailUtilities.SendEmail(ConfigurationManager.AppSettings["EmailUsername"], 
                     p.Email, 
                     "Registration to Speakcore Conference", 
-                    $"<div>Hi {p.FirstName},</div><div>See you at the conference!</div>");
+                    $"<p>Dear {p.FirstName},</p><p></p>" +
+                    "<p>On behalf of Pharma Company, Inc., thank you for registering for the Speaker Training Meeting.</p><p></p>" +
+                    "<p>You will receive a formal confirmatiomn email within the next 3 to 5 business days, including" +
+                    "information for booking your travel.</p><p></p>" +
+                    "<p>Regards,</p><p>The SpeakCore Team</p>");
             }
 
             return result; // What if registration succeeded and email send failed?
