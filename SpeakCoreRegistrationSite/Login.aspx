@@ -6,7 +6,7 @@
         <div class="bannerTop">LOGIN</div>
         <table>
             <tr>
-                <td>Please enter the case sensitive password from your official invitation.</td>
+                <td>Please enter the case-sensitive password from your official invitation.</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
